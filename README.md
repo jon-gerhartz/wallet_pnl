@@ -35,7 +35,7 @@ To set up the project environment, follow these steps:
   ```
 5. Ensure you have created all required environment variables as specified in sample.env.
 6. Initialize the database:
-7. 
+   
   ```bash 
   cd app/db
   python db_init.py
