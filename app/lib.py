@@ -228,7 +228,6 @@ def run_pnl_flow(wallet_address):
     """
     wallet_balance_data = get_wallet_data(wallet_address)
     wallet_balance_df_all = pd.DataFrame.from_dict(wallet_balance_data)
-    # wallet_balance_df_all = pd.read_csv('wallet_data.csv')
     if len(wallet_balance_df_all) == 0:
         raise ValueError("Invalid or unsupported wallet address")
 
