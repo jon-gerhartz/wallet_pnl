@@ -71,7 +71,14 @@ To start the API server, follow these instructions:
   python api.py
   ```
 
-1. Access the API endpoint by navigating to http://127.0.0.1:9999/get-pnl?wallet_address=<your_wallet_address> in your browser, replacing <your_wallet_address> with your actual wallet address.
+4. Access the API endpoint by navigating to http://127.0.0.1:9999/get-pnl?wallet_address=<your_wallet_address> in your browser, replacing <your_wallet_address> with your actual wallet address.
+
+## Calling the API
+1. Access the API endpoint by navigating to http://127.0.0.1:9999/get-pnl?wallet_address=<your_wallet_address> in your browser
+2. Replace <your_wallet_address> with a wallet you are looking to get PnL on
+3. To call the API via python or another language, make a get request to http://127.0.0.1:9999/get-pnl and pass {'wallet_address': '<your_wallet_address>'} as a query parameter
+4. The API only supports ETH based wallets. You can pass wallets which contain more than one ETH based coin. This will return PnL data for all coins where price and balance data is available
+5. PnL data is limited to price data and balance data. Balance data is always for last 7 days from when API call is made. Price data is from 7 days of last ELT pipeline run. 
 
 ## Running the Streamlit App
 To run the Streamlit application, ensure the following:
