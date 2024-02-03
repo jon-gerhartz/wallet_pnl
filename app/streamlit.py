@@ -10,7 +10,8 @@ load_dotenv()
 def gen_viz(wallet_address):
     API_BASE_URL = os.getenv("API_BASE_URL")
     ENDPOINT = f'/get-pnl?wallet_address={wallet_address}'
-    url = API_BASE_URL + ENDPOINT
+    API_PORT = os.getenv("API_PORT")
+    url = API_BASE_URL + ':' + API_PORT + ENDPOINT
 
     data = requests.get(url).json()['data']
 

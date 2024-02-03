@@ -7,6 +7,7 @@ load_dotenv()
 
 # load env vars
 FLASK_SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
+API_PORT = os.getenv("API_PORT")
 
 app = Flask(__name__)
 app.secret_key = FLASK_SECRET_KEY
@@ -39,4 +40,4 @@ def serve_pnl():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=9999)
+    app.run(debug=True, port=API_PORT)
