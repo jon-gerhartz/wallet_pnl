@@ -7,6 +7,11 @@ Before you begin, ensure you have installed the following requirements:
 - Python 3.12.0
 - PostgreSQL 15
 
+##Start Postgres 15 Server
+1. Follow directions at link below to start postgres server:
+https://www.postgresql.org/docs/current/server-start.html
+2. Start server, note DB_USER, DB_HOST, DB_PW (if any). You will need to set these as environment variables in your .env file
+
 ## Setup
 
 To set up the project environment, follow these steps:
