@@ -16,20 +16,26 @@ To set up the project environment, follow these steps:
   git clone https://github.com/jon-gerhartz/wallet_pnl.git
 ```
 
-2. Install the required Python packages:
+2. Change into wallet_pnl directory
+
+  ```bash
+  cd wallet_pnl
+  ```
+
+3. Install the required Python packages:
 
   ```bash
   pip install -r requirements.txt
   ```
 
-3. Create a .env file based on sample.env provided. Adjust the values according to your environment:
+4. Create a .env file based on sample.env provided. Adjust the values according to your environment:
 
   ```bash
   cp sample.env .env
   ```
-4. Ensure you have created all required environment variables as specified in sample.env.
-5. Initialize the database:
-6. 
+5. Ensure you have created all required environment variables as specified in sample.env.
+6. Initialize the database:
+7. 
   ```bash 
   cd app/db
   python db_init.py
