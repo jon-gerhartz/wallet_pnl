@@ -1,9 +1,5 @@
-# wallet_pnl
+# Wallet PnL Machine
 Python API and ETL for PnL calculation on crypto wallets
-
-# Project Title
-
-Brief description of your project.
 
 ## Prerequisites
 
